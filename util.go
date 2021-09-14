@@ -11,7 +11,7 @@ import (
 )
 
 func GetDefaultConfigDir() string {
-	return filepath.Join(Homedir(), ".gdrive")
+	return filepath.Join(Homedir(), ".config", ".gdrive")
 }
 
 func ConfigFilePath(basePath, name string) string {
